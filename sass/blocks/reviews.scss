@@ -1,0 +1,41 @@
+.reviews {
+
+  margin-bottom: 147px;
+  
+  &__article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 442px;
+    height: 315px;
+    padding: 72px 57px 30px 87px;
+    background-color: $white;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  &__autor {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__photo {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+
+  &__text {
+    color: $lightpurple;
+  }
+
+  &__name {
+    color: $lightred;
+    margin: 0;
+  }
+
+  &__time {
+    font-size: 10px;
+    color: $lightpurple;
+  }
+}

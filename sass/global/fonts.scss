@@ -1,0 +1,26 @@
+/* MEDIUM Geometria */
+@font-face {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/geometia-medium.woff2") format("woff2"),
+    url("../fonts/geometia-medium.woff") format("woff");
+}
+
+/* BOLD Geometria */
+@font-face {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/geometria-bold.woff2") format("woff2"),
+    url("../fonts/geometria-bold.woff") format("woff");
+}
+
+/* REGULAR Caveat */
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/caveat_brush.woff2") format("woff2"),
+    url("../fonts/caveat_brush.woff") format("woff");
+}

@@ -1,0 +1,16 @@
+//Global
+@import "./global/common.scss";
+@import "./global/normalize.scss";
+@import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
+@import "./mixins/var.scss";
+
+//Blocks
+@import "./blocks/header.scss";
+@import "./blocks/social.scss";
+@import "./blocks/section.scss";
+@import "./blocks/subscription.scss";
+@import "./blocks/about.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/form.scss";

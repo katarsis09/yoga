@@ -1,0 +1,121 @@
+.about {
+
+  margin-bottom: 140px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 67px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 105px;
+    padding-right: 15px;
+    background-color: $white;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 89px;
+  }
+
+  &__article {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+
+  &__descr {
+   
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  &__name,
+  &__prof {
+    color: $lightred;
+  }
+
+  &__name {
+    margin-bottom: 9px;
+  }
+
+  &__lesson {
+    color: $lightpurple;
+  }
+
+  &__photo { 
+    width: 144px;
+    height: 144px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: 50% 50%;
+    transform: translate(-15%, -30%);
+  }
+
+  &__popov {
+    background-image: url("/img/teacher.jpg");
+  }
+
+  &__rojnina {
+    background-image: url("/img/ronjina.jpg");
+  }
+
+  &__emelyanova {
+    background-image: url("/img/emelyanova.jpg");
+  }
+
+
+  &__teacher {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__social {
+    display: flex;
+    margin-bottom: 37px;
+  }
+
+  &__link {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    color: $lightpurple;
+    text-decoration: underline;
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__contact:not(:last-child) {
+    margin-right: 11px;
+  }
+
+  &__fullname {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    color: $lightpurple;
+  }
+
+  &__experience {
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $lightred;
+  }
+
+  &__work {
+    margin-bottom: 18px;
+    color: $lightpurple;
+  }
+}

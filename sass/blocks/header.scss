@@ -1,0 +1,109 @@
+.header {
+  margin-bottom: 130px;
+  
+
+  &__container {
+    position: relative;
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+
+  &__top {
+    display: flex;
+    padding-top: 74px;
+    padding-bottom: 130px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__burger {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    padding-left: 29px;
+    background-image: url("/img/burger.svg");
+    background-repeat: no-repeat;
+    color: $lightpurple;
+  }
+
+  &__telephone {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: $lightpurple;
+  }
+
+  &__title {
+   margin: 0 auto;
+    font-family: "Caveat";
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 400;
+    color: $lightpurple;
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  // &__registr {
+   
+  //   // width: 260px;
+  //   height: 48px;
+  // }
+
+  &__link {
+    display: block;
+    margin-bottom: 133px;
+    padding-left: 65px;
+    width: 250px;
+    height: 48px;
+    background-image: url("/img/header-button.svg");
+    background-repeat: no-repeat;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $lightred;
+  }
+
+  &__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__city {
+    font-size: 16px;
+    line-height: 16px;
+    color: $lightpurple;
+  }
+
+  &__number {
+    position: absolute;
+    right: 50px;
+    top: center;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $lightpurple;
+    opacity: 0.5;
+    // background-image: url("/img/line.svg");
+    // background-repeat: no-repeat;
+    // padding-right: 20px;
+  }
+}
+
+.body {
+  background-image: url("/img/bg-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: 100%;
+  background-color: #FCF8FE;
+}
+

@@ -1,0 +1,177 @@
+.section {
+
+  &__container {
+    max-width: 925px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 65px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $lightpurple;
+  }
+
+}
+
+
+.direction {
+  margin: 0 auto;
+  margin-bottom: 154px;
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+   
+    margin-bottom: 13px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: $lightpurple;
+  }
+
+  &__info {
+    
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    color: $lightpurple;
+  }
+
+  
+
+  &__btn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    color: $lightpurple;
+    background-color: $white;
+    text-align: center;
+  }
+
+}
+
+.left {
+  &__hatha {
+    width: 366px;
+    height: 311px;
+    background-image: url("/img/hatha.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &__card {
+    margin-right: 34px;
+  }
+
+  &__descr {
+    padding-top: 42px;
+    padding-left: 46px;
+  }
+
+  &__teacher {
+    width: 115px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    color: $lightred;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+  }
+
+  &__link {
+    display: block;
+    width: 64px;
+    height: 182px;
+    background-color: $lightpurple;
+    background-image: url("/img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__info {
+    width: 175px;
+  }
+}
+
+.right {
+
+  &__img {
+    width: 220px;
+    height: 180px;
+    background-repeat: no-repeat;
+  }
+
+  &__ashtanga {
+    background-image: url("/img/ashtanga.jpg");
+  }
+
+  &__kundalini {
+    background-image: url("/img/kundalini.jpg");
+  }
+
+  &__teacher {
+    width: 115px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    color: $lightred;
+  }
+
+  &__timetable {
+    margin-bottom: 16px;
+  }
+
+  &__first {
+    display: flex;
+    margin-bottom: 18px;
+  }
+
+  &__second {
+    display: flex;
+    margin-bottom: 62px;
+  }
+
+  &__descr {
+    padding-top: 42px;
+    padding-left: 34px;
+    padding-right: 34px;
+
+  }
+
+  &__info {
+    width: 165px;
+  }
+
+  &__card {
+    background-color: $white;
+  }
+
+  &__instructor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 235px;
+  }
+
+  &__link {
+    width: 45px;
+    height: 30px;
+    background-color: $lightpurple;
+    background-image: url("/img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
