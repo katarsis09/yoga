@@ -1,4 +1,5 @@
 .footer {
+  display: none;
   
   max-width: 100%;
 
@@ -23,8 +24,12 @@
   }
 
   &__container {
-    max-width: 930px;
+    max-width: 960px;
     margin: 0 auto;
+
+    @media (max-width: $tablet-width) {
+      max-width: 618px;
+    }
   }
 
   &__bottom {
@@ -53,11 +58,20 @@
     color: $lightpurple;
     font-size: 14px;
     line-height: 20px;
+
+    @media (max-width: $tablet-width) {
+      color: $white;
+    }
+
   }
 
   &__email, 
   &__phone {
     color: $lightpurple;
+
+    @media (max-width: $tablet-width) {
+      color: white;
+    }
   }
 
   &__item:not(:last-child) {
@@ -70,5 +84,20 @@
 
   &__contact {
     margin-right: 180px;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &__connect {
+    display: none;
+
+    @media (max-width: $tablet-width) {
+      display: block;
+      margin: 0 auto;
+      width: 370px;
+      margin-bottom: 30px;
+    }
   }
 }

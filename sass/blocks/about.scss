@@ -1,4 +1,5 @@
 .about {
+  display: none;
 
   margin-bottom: 140px;
 
@@ -16,10 +17,20 @@
     height: 105px;
     padding-right: 15px;
     background-color: $white;
+
+    @media (max-width: $tablet-width) {
+      width: 254px;
+      height: 67px;
+    }
   }
 
   &__item:not(:last-child) {
     margin-bottom: 89px;
+
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 56px;
+    }
   }
 
   &__article {
@@ -34,6 +45,12 @@
    
     font-size: 12px;
     line-height: 20px;
+
+    @media (max-width: $tablet-width) {
+      font-size: 10px;
+      line-height: 15px;
+    }
+
   }
 
   &__name,
@@ -43,6 +60,11 @@
 
   &__name {
     margin-bottom: 9px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
   }
 
   &__lesson {
@@ -56,18 +78,23 @@
     object-fit: contain;
     background-position: 50% 50%;
     transform: translate(-15%, -30%);
+
+    @media (max-width: $tablet-width) {
+      width: 91px;
+      height: 91px;
+    }
   }
 
   &__popov {
-    background-image: url("/img/teacher.jpg");
+    background-image: url("./img/teacher.jpg");
   }
 
   &__rojnina {
-    background-image: url("/img/ronjina.jpg");
+    background-image: url("./img/ronjina.jpg");
   }
 
   &__emelyanova {
-    background-image: url("/img/emelyanova.jpg");
+    background-image: url("./img/emelyanova.jpg");
   }
 
 
@@ -80,6 +107,11 @@
   &__social {
     display: flex;
     margin-bottom: 37px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 10px;
+    }
+   
   }
 
   &__link {
@@ -104,6 +136,10 @@
     font-weight: 700;
     line-height: 20px;
     color: $lightpurple;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 5px;
+    }
   }
 
   &__experience {
@@ -112,10 +148,19 @@
     font-weight: 500;
     line-height: 20px;
     color: $lightred;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 5px;
+    }
   }
 
   &__work {
     margin-bottom: 18px;
     color: $lightpurple;
+
+    @media (max-width: $tablet-width) {
+      font-size: 10px;
+      line-height: 15px;
+    }
   }
 }

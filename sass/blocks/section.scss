@@ -3,6 +3,11 @@
   &__container {
     max-width: 925px;
     margin: 0 auto;
+
+    @media (max-width: $tablet-width) {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
   }
 
   &__title {
@@ -14,38 +19,79 @@
     font-weight: 700;
     color: $lightpurple;
   }
-
 }
 
-
 .direction {
-  margin: 0 auto;
-  margin-bottom: 154px;
-
-  &__description {
-    display: flex;
-    justify-content: space-between;
+  &__img {
+    @media (max-width: $tablet-width) {
+      width: 100%;
+    }
   }
 
   &__title {
-   
     margin-bottom: 13px;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
     color: $lightpurple;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 13px;
+      margin-bottom: 0;
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+
+  &__timetable {
+    margin-bottom: 16px;
   }
 
   &__info {
-    
     font-size: 12px;
     line-height: 20px;
     font-weight: 500;
     color: $lightpurple;
+
+    @media (max-width: $tablet-width) {
+      font-size: 10px;
+      line-height: 15px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: $lightpurple;
+    background-image: url("/img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__link--small {
+    width: 45px;
+    height: 30px;
+
+    @media (min-width: $mobile-width-only) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__card { 
+    font-size: 0;
+    @media (max-width: $tablet-width) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__refer {
+    width: 17%;
   }
 
   
-
   &__btn {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -56,25 +102,22 @@
     color: $lightpurple;
     background-color: $white;
     text-align: center;
-  }
 
-}
-
-.left {
-  &__hatha {
-    width: 366px;
-    height: 311px;
-    background-image: url("/img/hatha.jpg");
-    background-repeat: no-repeat;
-  }
-
-  &__card {
-    margin-right: 34px;
+    @media (max-width: $tablet-width) {
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
   }
 
   &__descr {
     padding-top: 42px;
     padding-left: 46px;
+
+    @media (max-width: $tablet-width) {
+      padding-top: 18px;
+      padding-left: 21px;
+      padding-bottom: 13px;
+    }
   }
 
   &__teacher {
@@ -83,80 +126,11 @@
     line-height: 18px;
     font-weight: 500;
     color: $lightred;
-  }
 
-  &__bottom {
-    display: flex;
-    justify-content: space-between;
-    background-color: $white;
-  }
-
-  &__link {
-    display: block;
-    width: 64px;
-    height: 182px;
-    background-color: $lightpurple;
-    background-image: url("/img/arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-
-  &__info {
-    width: 175px;
-  }
-}
-
-.right {
-
-  &__img {
-    width: 220px;
-    height: 180px;
-    background-repeat: no-repeat;
-  }
-
-  &__ashtanga {
-    background-image: url("/img/ashtanga.jpg");
-  }
-
-  &__kundalini {
-    background-image: url("/img/kundalini.jpg");
-  }
-
-  &__teacher {
-    width: 115px;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 500;
-    color: $lightred;
-  }
-
-  &__timetable {
-    margin-bottom: 16px;
-  }
-
-  &__first {
-    display: flex;
-    margin-bottom: 18px;
-  }
-
-  &__second {
-    display: flex;
-    margin-bottom: 62px;
-  }
-
-  &__descr {
-    padding-top: 42px;
-    padding-left: 34px;
-    padding-right: 34px;
-
-  }
-
-  &__info {
-    width: 165px;
-  }
-
-  &__card {
-    background-color: $white;
+    @media (max-width: $tablet-width) {
+      font-size: 10px;
+      line-height: 15px;
+    }
   }
 
   &__instructor {
@@ -164,14 +138,287 @@
     justify-content: space-between;
     align-items: center;
     width: 235px;
+
+    @media (max-width: $tablet-width) {
+      width: 160px;
+    }
   }
 
-  &__link {
-    width: 45px;
-    height: 30px;
-    background-color: $lightpurple;
-    background-image: url("/img/arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
   }
 }
+
+// .direction {
+//   margin: 0 auto;
+//   margin-bottom: 154px;
+
+//   @media (min-width: $mobile-width-only) {
+//     margin-bottom: 70px;
+//   }
+
+//   &__description {
+//     display: flex;
+//     justify-content: space-between;
+
+//     @media (max-width: $tablet-width) {
+      
+//       flex-direction: column;
+//       flex-wrap: wrap;
+//       align-items: center;
+//     }
+//   }
+
+//   &__title {
+//     margin-bottom: 13px;
+//     font-size: 16px;
+//     line-height: 16px;
+//     font-weight: 700;
+//     color: $lightpurple;
+
+//     @media (max-width: $tablet-width) {
+//       margin-bottom: 0;
+//       font-size: 12px;
+//       line-height: 12px;
+//     }
+//   }
+
+
+
+//   &__info {
+//     font-size: 12px;
+//     line-height: 20px;
+//     font-weight: 500;
+//     color: $lightpurple;
+
+//     @media (max-width: $tablet-width) {
+//       font-size: 10px;
+//       line-height: 15px;
+//     }
+//   }
+
+  
+
+//   &__btn {
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+//     width: 100%;
+//     font-size: 14px;
+//     line-height: 14px;
+//     font-weight: 500;
+//     color: $lightpurple;
+//     background-color: $white;
+//     text-align: center;
+//     @media (max-width: $tablet-width) {
+//       padding-top: 14px;
+//       padding-bottom: 14px;
+//     }
+//   }
+
+//   &__link {
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     background-color: $lightpurple;
+//     background-image: url("/img/arrow.svg");
+//     background-repeat: no-repeat;
+//     background-position: center center;
+
+    
+
+//   }
+
+//   &__link--small {
+//     width: 45px;
+//     height: 30px;
+//     @media (min-width: $mobile-width-only) {
+//       width: 100%;
+//       height: 100%;
+//     }
+//   }
+
+//   &__card { 
+
+  
+
+//     @media (min-width: $mobile-width-only) {
+//       width: 100%;
+//     }
+//   }
+
+//   &__refer {
+//     width: 20%;
+//   }
+// }
+
+// // .left {
+// //   &__hatha {
+// //     // width: 366px;
+// //     // height: 311px;
+    
+
+// //     @media (max-width: $tablet-width) {
+// //       // width: 246px;
+// //       // height: 209px;
+// //       width: 100%;
+      
+// //     }
+
+// //     // @media (min-width: $mobile-width-only) {
+// //     //   width: 100%;
+// //     // }
+
+// //   }
+
+// //   &__card {
+// //     margin-right: 30px;
+
+// //     @media (max-width: $tablet-width) {
+// //       margin-right: 0;
+// //       margin-bottom: 30px;
+// //       font-size: 0;
+// //     }
+// //   }
+
+// //   &__descr {
+// //     padding-top: 42px;
+// //     padding-left: 46px;
+
+// //     @media (max-width: $tablet-width) {
+// //       padding-top: 18px;
+// //       padding-left: 21px;
+// //       padding-bottom: 13px;
+// //     }
+// //   }
+
+// //   &__teacher {
+// //     width: 115px;
+// //     font-size: 12px;
+// //     line-height: 18px;
+// //     font-weight: 500;
+// //     color: $lightred;
+
+// //     @media (max-width: $tablet-width) {
+// //       font-size: 10px;
+// //       line-height: 15px;
+// //     }
+// //   }
+
+// //   &__bottom {
+// //     display: flex;
+// //     justify-content: space-between;
+// //     background-color: $white;
+// //   }
+
+// //   &__info {
+// //     width: 175px;
+// //   }
+// // }
+
+// .right {
+
+//   @media (min-width: $mobile-width-only) {
+//     width: 100%;
+//   }
+
+//   // &__img {
+//   //   width: 220px;
+//   //   height: 180px;
+   
+
+//   //   @media (max-width: $tablet-width) {
+//   //     width: 148px;
+//   //     height: 121px;
+   
+//   //   }
+
+//   //   @media (min-width: $mobile-width-only) {
+//   //     width: 246px;
+//   //     height: 201px;
+//   //   }
+//   // }
+
+
+
+//   &__teacher {
+//     width: 115px;
+//     font-size: 12px;
+//     line-height: 18px;
+//     font-weight: 500;
+//     color: $lightred;
+
+//     @media (max-width: $tablet-width) {
+//       font-size: 10px;
+//       line-height: 15px;
+//     }
+//   }
+
+//   &__timetable {
+//     margin-bottom: 16px;
+//   }
+
+//   &__first {
+//     display: flex;
+//     margin-bottom: 18px;
+
+//     @media (min-width: $mobile-width-only) {
+      
+//       margin-bottom: 30px;
+//     }
+//   }
+
+//   &__second {
+//     display: flex;
+//     margin-bottom: 20px;
+
+//     @media (max-width: $tablet-width) {
+//       margin-bottom: 24px;
+//     }
+//   }
+
+//   &__descr {
+//     padding-top: 42px;
+//     padding-left: 34px;
+//     padding-right: 34px;
+
+//     @media (max-width: $tablet-width) {
+//       padding-top: 18px;
+//       padding-left: 20px;
+//       padding-right: 0px;
+//     }
+
+//   }
+
+//   &__info {
+//     width: 165px;
+//   }
+
+//   &__card {
+//     background-color: $white;
+
+//     @media (min-width: $mobile-width-only) {
+//       flex-direction: column;
+//     }
+//   }
+
+//   &__instructor {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     width: 235px;
+
+//     @media (max-width: $tablet-width) {
+//       width: 160px;
+//     }
+//   }
+
+
+//   &__bottom {
+//     @media (min-width: $mobile-width-only) {
+//       display: flex;
+//       justify-content: space-between;
+//     }
+//   }
+// }

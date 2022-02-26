@@ -12,7 +12,7 @@
     <div class="header__container">
       <div class="header__top">
         <button class="header__burger">
-          Меню
+          <span class="header__menu">Меню</span>  
         </button>
         <a href="tel:+78126901010" class="header__telephone">8 (812) 690-10-10</a>
       </div>
@@ -21,7 +21,15 @@
         <a href="#" class="header__logo">
           <img src="img/logo.svg" alt="Логотип YOGA">
         </a>
-        <a href="#contact" class="header__link">Запишитесь на бесплатное пробное занятие</a>      
+        <a href="#contact" class="header__link">
+          <span class="header__arrow">
+            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L5 5L1 9" stroke="white"/>
+            </svg>
+          </span>
+          <span class="header__offer">Запишитесь на бесплатное пробное занятие</span>
+          
+        </a>      
       </div>
       <div class="header__bottom">
         <div class="header__social social">
@@ -59,53 +67,64 @@
         <h2 class="section__title">Направления</h2>
         <div class="direction__description">
           <div class="direction__left left">
-            <article class="left__card">
-              <div class="left__img left__hatha"></div>
-              <div class="left__bottom">
-                <div class="left__descr">
-                  <h3 class="left__title direction__title">Хатха-йога</h3> 
-                  <div class="right__timetable">
+            <article class="direction__card left__card">
+              <img src="/img/hatha.jpg" alt="Занятие Хатха-йога" class="direction__img left__hatha">
+              <div class="direction__bottom">
+                <div class="direction__descr left__descr">
+                  <h3 class="left__title direction__title">Хатха-йога</h3>
+                  <div class="direction__timetable"> 
                     <p class="left__info direction__info">Пн, Ср, Пт – с 12:00 до 15:00 </p>
                     <p class="left__info direction__info">Вт, Чт – с 18:00 до 21:00 </p>
                   </div>
-                  
-                  <p class="left__teacher">Инструктор Емельянова Полина</p>
+                  <div class="direction__instructor">
+                    <p class="direction__teacher">Инструктор Емельянова Полина</p>
+                  </div>
                 </div>
-                <div class="left__refer">
-                  <a href="#contact" class="left__link"></a>
-                </div>              
+                <div class="direction__refer">
+                  <a href="#contact" class="direction__link direction__link--small"></a>
+                </div>               
               </div>
-            </article> 
+            </article>
           </div>
           <div class="direction__right right">
-            <div class="right__cards">
-              <article class="right__first right__card">
-                <div class="right__img right__ashtanga"></div>
-                <div class="right__descr">
-                  <h3 class="right__title direction__title">Ашатанга-йога</h3>
-                  <div class="right__timetable"> 
-                    <p class="right__info direction__info">Пн, Ср, Пт – с 11:00 до 14:00 </p>
-                    <p class="right__info direction__info">Вт, Чт – с 19:00 до 21:00 </p>
+            <div class="right__cards ">
+              <article class="right__first direction__card right__card">
+                <img src="./img/ashtanga.jpg" alt="Занятие Ашатанга-йога" class="direction__img right__ashtanga">
+                <div class="direction__bottom">
+                  <div class="direction__descr left__descr">
+                    <h3 class="direction__title direction__title">Ашатанга-йога</h3>
+                    <div class="direction__timetable"> 
+                      <p class="right__info direction__info">Пн, Ср, Пт – с 11:00 до 14:00 </p>
+                      <p class="right__info direction__info">Вт, Чт – с 19:00 до 21:00 </p>
+                    </div>
+                    <div class="direction__instructor">
+                      <p class="direction__teacher">Инструктор Емельянова Полина</p>
+                      <!-- <a href="#contact" class="right__link"></a> -->
+                    </div>
                   </div>
-                  <div class="right__instructor">
-                    <p class="right__teacher">Инструктор Емельянова Полина</p>
-                    <a href="#contact" class="right__link"></a>
-                  </div>
+                  <div class="direction__refer">
+                    <a href="#contact" class="direction__link direction__link--small"></a>
+                  </div>               
                 </div>
               </article>
-              <article class="right__second right__card">
-                <div class="right__img right__kundalini"></div>
-                <div class="right__descr">
-                  <h3 class="right__title direction__title">Кундалини-йога</h3> 
-                  <div class="right__timetable"> 
-                    <p class="right__info direction__info">Пн, Ср, Пт – с 12:00 до 15:00 </p>
-                    <p class="right__info direction__info">Вт, Чт – с 18:00 до 21:00 </p>
+              <article class="right__second direction__card right__card">
+                <img src="./img/kundalini.jpg" alt="Занятие Кундалини-йога" class="direction__img right__kundalini">
+                <div class="direction__bottom">
+                  <div class="direction__descr left__descr">
+                    <h3 class="direction__title direction__title">Кундалини-йога</h3> 
+                    <div class="direction__timetable"> 
+                      <p class="right__info direction__info">Пн, Ср, Пт – с 12:00 до 15:00 </p>
+                      <p class="right__info direction__info">Вт, Чт – с 18:00 до 21:00 </p>
+                    </div>
+                    <div class="direction__instructor">
+                      <p class="direction__teacher">Инструктор Емельянова Полина</p>
+                      <!-- <a href="#contact" class="right__link"></a> -->
+                    </div>
                   </div>
-                  <div class="right__instructor">
-                    <p class="right__teacher">Инструктор Емельянова Полина</p>
-                    <a href="#contact" class="right__link"></a>
-                  </div>
-                </div>
+                  <div class="direction__refer">
+                    <a href="#contact" class="direction__link direction__link--small"></a>
+                  </div>              
+                </div>  
               </article>
   
             </div>
@@ -356,6 +375,26 @@
       </div>
     </div>
     <div class="footer__bottom">
+      <div class="footer__contact footer__connect">
+        <ul class="footer__list list-reset">
+          <li class="footer__item">
+            <p class="footer__name">Адрес:</p>
+            <p class="footer__info">Московский проспект, 22</p>
+          </li>
+          <li class="footer__item">
+            <p class="footer__name">Телефон:</p>
+            <a href="tel:+78126901010" class="footer__phone footer__info">8 (812) 690-10-10</a>
+          </li>
+          <li class="footer__item">
+            <p class="footer__name">График работы:</p>
+            <p class="footer__info">Пн-Вс с 11:00 до 21:00</p>
+          </li>
+          <li class="footer__item">
+            <p class="footer__name">Email:</p>
+            <a class="footer__email footer__info" href="mailto:yogaspb@gmail.com">yogaspb@gmail.com</a>
+          </li>
+        </ul>
+      </div>
       <div class="footer__copyright footer__container">
         <a class="footer__link" href="#">Yogaspb.com</a>
         <ul class="social__list list-reset">
