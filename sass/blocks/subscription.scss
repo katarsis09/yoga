@@ -1,6 +1,11 @@
 .subscription {
 
+
   margin-bottom: 150px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
 
   &__list {
     margin: 0 auto;
@@ -9,6 +14,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
   }
 
   &__btn {
@@ -22,26 +29,48 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 
-    @media (min-width: $mobile-width-only) {
-      
+    @media (max-width: $tablet-width) {
+      flex-direction: column;
     }
   }
 
   &__time {
-    width: 263px;
-    height: 237px;
+    // width: 263px;
+    // height: 237px;
+    width: 100%;
+    height: 100%;
     background-color: $white;
+    outline: 1px solid red;
+
 
     @media (max-width: $tablet-width) {
-      width: 176px;
-      height: 158px;
-    }
-
-    @media (min-width: $mobile-width-only) {
       width: 250px;
       height: 199px;
+      
     }
+  }
+
+  &__time:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+
+  &__button {
+    width: 148px;
+    padding: 14px 23px;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 500;
+    color: $white;
+    background-color: $lightpurple;
+    text-align: center;
   }
 
   &__article {

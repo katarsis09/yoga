@@ -1,5 +1,5 @@
 .reviews {
-  display: none;
+  
 
   margin-bottom: 147px;
   
@@ -7,12 +7,16 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 442px;
-    height: 315px;
-    padding: 72px 57px 30px 87px;
+    // width: 442px;
+    // height: 315px;
+    // padding: 72px 57px 30px 87px;
     background-color: $white;
     font-size: 12px;
     line-height: 20px;
+
+    @media (max-width: $tablet-width) {
+   
+    }
   }
 
   &__autor {

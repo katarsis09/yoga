@@ -1,5 +1,5 @@
 .about {
-  display: none;
+ 
 
   margin-bottom: 140px;
 
@@ -7,6 +7,8 @@
     display: flex;
     flex-direction: column;
     margin-right: 67px;
+
+    
   }
 
   &__item {
@@ -14,24 +16,20 @@
     justify-content: space-between;
     align-items: center;
     width: 400px;
-    height: 105px;
     padding-right: 15px;
     background-color: $white;
+  
 
     @media (max-width: $tablet-width) {
-      width: 254px;
-      height: 67px;
+      width: 226px;
+      outline: 1px solid red;
+      margin-bottom: 0;
     }
   }
 
-  &__item:not(:last-child) {
-    margin-bottom: 89px;
-
-
-    @media (max-width: $tablet-width) {
-      margin-bottom: 56px;
-    }
-  }
+  // &__item:not(:last-child) {
+  //   margin-bottom: 89px; 
+  // }
 
   &__article {
     display: flex;
@@ -46,7 +44,11 @@
     font-size: 12px;
     line-height: 20px;
 
+
     @media (max-width: $tablet-width) {
+      padding-left: 15px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       font-size: 10px;
       line-height: 15px;
     }
@@ -59,12 +61,15 @@
   }
 
   &__name {
-    margin-bottom: 9px;
-
     @media (max-width: $tablet-width) {
-      margin-bottom: 0;
+      margin-bottom: 15px;
     }
+  }
 
+  &__contact:not(:last-child) {
+    @media (max-width: $tablet-width) {
+      margin-bottom: 15px;
+    }
   }
 
   &__lesson {
@@ -80,8 +85,9 @@
     transform: translate(-15%, -30%);
 
     @media (max-width: $tablet-width) {
-      width: 91px;
-      height: 91px;
+      width: 82px;
+      height: 82px;
+      transform: none;
     }
   }
 
@@ -109,6 +115,7 @@
     margin-bottom: 37px;
 
     @media (max-width: $tablet-width) {
+      flex-direction: column;
       margin-bottom: 10px;
     }
    
@@ -120,12 +127,16 @@
     line-height: 20px;
     color: $lightpurple;
     text-decoration: underline;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
   }
 
-  &__description {
-    display: flex;
-    justify-content: space-between;
-  }
+  // &__description {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
 
   &__contact:not(:last-child) {
     margin-right: 11px;
@@ -139,6 +150,8 @@
 
     @media (max-width: $tablet-width) {
       margin-bottom: 5px;
+      font-size: 0;
+      
     }
   }
 
@@ -150,6 +163,7 @@
     color: $lightred;
 
     @media (max-width: $tablet-width) {
+      font-size: 10px;
       margin-bottom: 5px;
     }
   }

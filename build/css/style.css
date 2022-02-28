@@ -566,6 +566,14 @@ template {
   line-height: 30px;
   font-weight: 700;
   color: #8E80A9; }
+  @media (max-width: 768px) {
+    .section__title {
+      font-size: 18px;
+      line-height: 18px; } }
+
+@media (max-width: 768px) {
+  .direction {
+    margin-bottom: 70px; } }
 
 @media (max-width: 768px) {
   .direction__img {
@@ -602,7 +610,7 @@ template {
   width: 100%;
   height: 100%;
   background-color: #8E80A9;
-  background-image: url("/img/arrow.svg");
+  background-image: url("./img/arrow.svg");
   background-repeat: no-repeat;
   background-position: center center; }
 
@@ -672,5 +680,222 @@ template {
   display: flex;
   justify-content: space-between;
   background-color: #FFFFFF; }
+
+.subscription {
+  margin-bottom: 150px; }
+  @media (max-width: 768px) {
+    .subscription {
+      margin-bottom: 70px; } }
+  .subscription__list {
+    margin: 0 auto;
+    margin-bottom: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .subscription__btn {
+    font-size: 12px;
+    line-height: 20px;
+    color: #E65C7B; }
+  .subscription__offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media (max-width: 768px) {
+      .subscription__offer {
+        flex-direction: column; } }
+  .subscription__time {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    outline: 1px solid red; }
+    @media (max-width: 768px) {
+      .subscription__time {
+        width: 250px;
+        height: 199px; } }
+  .subscription__time:not(:last-child) {
+    margin-bottom: 30px; }
+  .subscription__title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700; }
+  .subscription__button {
+    width: 148px;
+    padding: 14px 23px;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #8E80A9;
+    text-align: center; }
+  .subscription__article {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    text-align: center; }
+    @media (max-width: 768px) {
+      .subscription__article {
+        padding-top: 36px;
+        padding-bottom: 30px; } }
+  .subscription__condition {
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #E65C7B; }
+    @media (max-width: 768px) {
+      .subscription__condition {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 10px;
+        line-height: 15px; } }
+  .subscription__price {
+    display: block;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #8E80A9; }
+    @media (max-width: 768px) {
+      .subscription__price {
+        font-size: 20px;
+        line-height: 20px; } }
+
+.about {
+  margin-bottom: 140px; }
+  .about__list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 67px; }
+  .about__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    padding-right: 15px;
+    background-color: #FFFFFF; }
+    @media (max-width: 768px) {
+      .about__item {
+        width: 226px;
+        outline: 1px solid red;
+        margin-bottom: 0; } }
+  .about__article {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 18px; }
+  .about__descr {
+    font-size: 12px;
+    line-height: 20px; }
+    @media (max-width: 768px) {
+      .about__descr {
+        padding-left: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 10px;
+        line-height: 15px; } }
+  .about__name, .about__prof {
+    color: #E65C7B; }
+  @media (max-width: 768px) {
+    .about__name {
+      margin-bottom: 15px; } }
+  @media (max-width: 768px) {
+    .about__contact:not(:last-child) {
+      margin-bottom: 15px; } }
+  .about__lesson {
+    color: #8E80A9; }
+  .about__photo {
+    width: 144px;
+    height: 144px;
+    background-repeat: no-repeat;
+    -o-object-fit: contain;
+       object-fit: contain;
+    background-position: 50% 50%;
+    transform: translate(-15%, -30%); }
+    @media (max-width: 768px) {
+      .about__photo {
+        width: 82px;
+        height: 82px;
+        transform: none; } }
+  .about__popov {
+    background-image: url("./img/teacher.jpg"); }
+  .about__rojnina {
+    background-image: url("./img/ronjina.jpg"); }
+  .about__emelyanova {
+    background-image: url("./img/emelyanova.jpg"); }
+  .about__teacher {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .about__social {
+    display: flex;
+    margin-bottom: 37px; }
+    @media (max-width: 768px) {
+      .about__social {
+        flex-direction: column;
+        margin-bottom: 10px; } }
+  .about__link {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    color: #8E80A9;
+    text-decoration: underline; }
+    @media (max-width: 768px) {
+      .about__link {
+        display: none; } }
+  .about__contact:not(:last-child) {
+    margin-right: 11px; }
+  .about__fullname {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #8E80A9; }
+    @media (max-width: 768px) {
+      .about__fullname {
+        margin-bottom: 5px;
+        font-size: 0; } }
+  .about__experience {
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #E65C7B; }
+    @media (max-width: 768px) {
+      .about__experience {
+        font-size: 10px;
+        margin-bottom: 5px; } }
+  .about__work {
+    margin-bottom: 18px;
+    color: #8E80A9; }
+    @media (max-width: 768px) {
+      .about__work {
+        font-size: 10px;
+        line-height: 15px; } }
+
+.reviews {
+  margin-bottom: 147px; }
+  .reviews__article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    font-size: 12px;
+    line-height: 20px; }
+  .reviews__autor {
+    display: flex;
+    justify-content: flex-start; }
+  .reviews__photo {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px; }
+  .reviews__text {
+    color: #8E80A9; }
+  .reviews__name {
+    color: #E65C7B;
+    margin: 0; }
+  .reviews__time {
+    font-size: 10px;
+    color: #8E80A9; }
 
 /*# sourceMappingURL=style.css.map */

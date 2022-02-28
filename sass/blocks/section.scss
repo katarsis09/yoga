@@ -18,10 +18,19 @@
     line-height: 30px;
     font-weight: 700;
     color: $lightpurple;
+
+    @media (max-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 18px;
+    }
   }
 }
 
 .direction {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
   &__img {
     @media (max-width: $tablet-width) {
       width: 100%;
@@ -64,7 +73,7 @@
     width: 100%;
     height: 100%;
     background-color: $lightpurple;
-    background-image: url("/img/arrow.svg");
+    background-image: url("./img/arrow.svg");
     background-repeat: no-repeat;
     background-position: center center;
   }
