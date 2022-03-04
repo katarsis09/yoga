@@ -1,7 +1,5 @@
  .header {
 
-
-
 @media (max-width: $desktop-width) {
   margin-bottom: 90px;
 }
@@ -20,14 +18,17 @@
     
     margin: 0 auto;
 
+    @media (max-width: $desktop-width) {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+
     @media (max-width: $tablet-width) {
       padding-left: 15px;
       padding-right: 15px;
     }
 
-    @media (max-width: $desktop-width) {
-      max-width: 925px;
-    }
+   
 
     @media (min-width: $desktop-width) {
       max-width: 1160px;
