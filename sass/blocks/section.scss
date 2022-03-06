@@ -14,7 +14,7 @@
     }
     
     @media (min-width: $desktop-width) {
-      max-width: 1160px;
+      max-width: 930px;
     }
   }
 
@@ -54,7 +54,7 @@
   &__title {
     margin-bottom: 13px;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 15px;
     font-weight: 700;
     color: $lightpurple;
 
@@ -65,7 +65,8 @@
       line-height: 12px;
     }
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-      margin-bottom: 8px;
+      margin-bottom: 9px;
+    
     }
 
     @media (min-width: $desktop-width) {
@@ -89,13 +90,13 @@
 
   &__info {
     font-size: 10px;
-    line-height: 20px;
+    line-height: 13px;
     font-weight: 500;
     color: $lightpurple;
 
     @media (max-width: $tablet-width) {
       font-size: 10px;
-      line-height: 15px;
+      line-height: 13px;
     }
 
     @media (min-width: $desktop-width) {
@@ -167,9 +168,16 @@
 
     @media (min-width: $tablet-width) {
       margin-top: auto;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+
   }
 
   &__descr {
@@ -179,11 +187,11 @@
     @media (max-width: $desktop-width) {
       padding-top: 18px;
       padding-left: 21px;
-      padding-bottom: 13px;
+    
     }
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-      padding-top: 10px;
+      padding-top: 18px;
       padding-bottom: 11px;
     }
 
@@ -197,7 +205,7 @@
   &__teacher {
     width: 115px;
     font-size: 10px;
-    line-height: 18px;
+    line-height: 15px;
     font-weight: 500;
     color: $lightred;
 
@@ -306,7 +314,7 @@
 
   &__cards {
     @media (min-width: $desktop-width) {
-      margin-bottom: 22px;
+      margin-bottom: 36px;
     }
   }
 
@@ -323,7 +331,7 @@
     }
     @media (min-width: $desktop-width) {
       width: 220px;
-      height: 180px;
+      height: 192px;
     }
 
   }

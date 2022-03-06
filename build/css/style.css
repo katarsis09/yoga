@@ -565,7 +565,7 @@ template {
       padding-right: 35px; } }
   @media (min-width: 1399px) {
     .section__container {
-      max-width: 1160px; } }
+      max-width: 930px; } }
 
 .section__title {
   margin: 0 auto;
@@ -597,7 +597,7 @@ template {
 .direction__title {
   margin-bottom: 13px;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 15px;
   font-weight: 700;
   color: #8E80A9; }
   @media (max-width: 768px) {
@@ -608,7 +608,7 @@ template {
       line-height: 12px; } }
   @media (min-width: 768px) and (max-width: 1399px) {
     .direction__title {
-      margin-bottom: 8px; } }
+      margin-bottom: 9px; } }
   @media (min-width: 1399px) {
     .direction__title {
       font-size: 16px;
@@ -622,13 +622,13 @@ template {
 
 .direction__info {
   font-size: 10px;
-  line-height: 20px;
+  line-height: 13px;
   font-weight: 500;
   color: #8E80A9; }
   @media (max-width: 768px) {
     .direction__info {
       font-size: 10px;
-      line-height: 15px; } }
+      line-height: 13px; } }
   @media (min-width: 1399px) {
     .direction__info {
       font-size: 12px; } }
@@ -680,18 +680,21 @@ template {
   @media (min-width: 768px) {
     .direction__btn {
       margin-top: auto;
-      padding-top: 15px;
-      padding-bottom: 15px; } }
+      padding-top: 10px;
+      padding-bottom: 10px; } }
+  @media (min-width: 1399px) {
+    .direction__btn {
+      padding-top: 20px;
+      padding-bottom: 20px; } }
 
 @media (max-width: 1399px) {
   .direction__descr {
     padding-top: 18px;
-    padding-left: 21px;
-    padding-bottom: 13px; } }
+    padding-left: 21px; } }
 
 @media (min-width: 768px) and (max-width: 1399px) {
   .direction__descr {
-    padding-top: 10px;
+    padding-top: 18px;
     padding-bottom: 11px; } }
 
 @media (min-width: 1399px) {
@@ -702,7 +705,7 @@ template {
 .direction__teacher {
   width: 115px;
   font-size: 10px;
-  line-height: 18px;
+  line-height: 15px;
   font-weight: 500;
   color: #E65C7B; }
   @media (max-width: 768px) {
@@ -780,7 +783,7 @@ template {
 
 @media (min-width: 1399px) {
   .right__cards {
-    margin-bottom: 22px; } }
+    margin-bottom: 36px; } }
 
 @media (min-width: 768px) and (max-width: 1399px) {
   .right__bottom {
@@ -794,7 +797,7 @@ template {
 @media (min-width: 1399px) {
   .right__img {
     width: 220px;
-    height: 180px; } }
+    height: 192px; } }
 
 @media (min-width: 768px) {
   .right__refer {
@@ -859,6 +862,10 @@ template {
     font-size: 16px;
     line-height: 20px;
     font-weight: 700; }
+    @media (min-width: 1399px) {
+      .subscription__title {
+        font-size: 18px;
+        line-height: 20px; } }
   .subscription__button {
     width: 148px;
     padding: 14px 23px;
@@ -906,6 +913,13 @@ template {
         padding-left: 20px;
         padding-right: 20px;
         margin-bottom: 15px; } }
+    @media (min-width: 1399px) {
+      .subscription__condition {
+        margin-bottom: 15px;
+        padding-left: 70px;
+        padding-right: 70px;
+        font-size: 12px;
+        line-height: 15px; } }
   .subscription__price {
     display: block;
     font-size: 30px;
@@ -1063,10 +1077,9 @@ template {
     @media (max-width: 768px) {
       .reviews__article {
         padding: 30px 15px; } }
-    @media (min-width: 768px) and (max-width: 1399px) {
+    @media (min-width: 768px) and (min-width: 1399px) {
       .reviews__article {
         width: 442px;
-        height: 215px;
         padding-top: 50px;
         padding-left: 87px;
         padding-right: 57px; } }
@@ -1089,6 +1102,9 @@ template {
       .reviews__text {
         margin-bottom: 30px;
         background-color: #FFFFFF; } }
+    @media (min-width: 1399px) {
+      .reviews__text {
+        margin-bottom: 30px; } }
   .reviews__name {
     color: #E65C7B;
     margin: 0; }
