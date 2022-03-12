@@ -2,12 +2,13 @@
   
 
   margin-bottom: 147px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  
+
+
   
   
   &__article {
