@@ -8,11 +8,13 @@
 
   &__field {
     margin-bottom: 25px;
+    padding-left: 15px;
     height: 60px;
     border: none;
     border-bottom: 1px solid $lightpurple;
     color: $lightpurple;
     opacity: 0.5;
+    cursor: pointer;
   }
 
   &__send {
@@ -22,7 +24,23 @@
     text-align: center;
     background-color: $lightred;
     color: $white;
+    cursor: pointer;
+  }
 
+  &__send:focus {
+    font-size: 15px;
+    outline: 1px solid $lightred;
+  }
+
+  &__send:hover {
+    font-size: 15px;
+    outline: 1px solid $lightred;
+  }
+
+  &__send:active {
+    font-size: 15px;
+    background-color: $white;
+    color: $lightred;
   }
 }
 
