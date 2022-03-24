@@ -1,7 +1,7 @@
 .subscription {
 
 
-  margin-bottom: 150px;
+  margin-bottom: 120px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 70px;
@@ -10,16 +10,19 @@
   &__list {
     margin: 0 auto;
     margin-bottom: 49px;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
+  }
 
-    
+
+  &__item:hover {
+    border-bottom: 1px solid $lightred;
   }
 
   &__btn {
-    
+
     font-size: 12px;
     line-height: 20px;
     color: $lightred;
@@ -30,7 +33,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 
     @media (max-width: $tablet-width) {
       flex-direction: column;
@@ -38,19 +41,39 @@
   }
 
   &__time {
-    // width: 263px;
-    // height: 237px;
+
     width: 100%;
     height: 100%;
     background-color: $white;
- 
+    box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+    transition: all 0.1s ease-in-out;
+    transition-duration: 0.05s;
+    transition-timing-function: ease;
 
 
     @media (max-width: $tablet-width) {
       width: 250px;
       height: 199px;
-      
+
     }
+  }
+
+  &__time:hover .subscription__button {
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &__time:hover {
+    background-color: $white;
+    @media (min-width: $tablet-width) {
+      height: 250px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 100%;
+    }
+
   }
 
   &__time:not(:last-child) {
@@ -62,7 +85,7 @@
     @media (min-width: $tablet-width) {
       margin-right: 24px;
     }
-    
+
   }
 
   &__title {
@@ -86,9 +109,12 @@
     text-align: center;
     transition: background-color 0.3s ease-in-out;
 
+
     @media (min-width: $tablet-width) {
       display: none;
     }
+
+
   }
 
 
@@ -115,10 +141,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  // padding: 56px 52px;
   padding-top: 56px;
   padding-bottom: 56px;
   text-align: center;
+
 
   @media (max-width: $tablet-width) {
     padding-top: 28px;
@@ -126,7 +152,6 @@
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    // width: 176px;
     height: 159px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -135,7 +160,6 @@
   }
 
   &__condition {
-    // margin-bottom: 26px;
     padding-left: 60px;
     padding-right: 60px;
     font-size: 12px;
@@ -172,6 +196,7 @@
     line-height: 30px;
     font-weight: 700;
     color: $lightpurple;
+    margin-bottom: 15px;
 
     @media (max-width: $tablet-width) {
       font-size: 20px;

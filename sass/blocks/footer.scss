@@ -1,8 +1,8 @@
 .footer {
-  
+
   max-width: 100%;
-  
- 
+
+
   &__form {
     width: 410px;
 
@@ -22,7 +22,7 @@
     justify-content: space-between;
     padding-top: 70px;
     padding-bottom: 58px;
-    background-image: url('/img/footer.jpg');
+    background-image: url('../img/footer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -50,7 +50,7 @@
   }
 
   &__bottom {
-   
+
     padding: 30px 35px;
     font-size: 12px;
     line-height: 20px;
@@ -104,12 +104,12 @@
       grid-template-columns: 250px 150px;
       grid-template-rows: 1fr 1fr;
       width: 400px;
-     
+
     }
 
   }
 
-  &__email, 
+  &__email,
   &__phone {
     color: $lightpurple;
 
@@ -136,7 +136,7 @@
       display: none;
     }
 
-    
+
   }
 
   &__connect {
@@ -145,7 +145,6 @@
     @media (max-width: $desktop-width) {
       display: block;
       margin: 0 auto;
-      // width: 370px;
       margin-bottom: 30px;
     }
   }

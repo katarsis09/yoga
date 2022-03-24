@@ -1,7 +1,7 @@
 .section {
 
   &__container {
-    // max-width: 925px;
+
     margin: 0 auto;
 
     @media (max-width: $desktop-width) {
@@ -12,7 +12,7 @@
       padding-left: 35px;
       padding-right: 35px;
     }
-    
+
     @media (min-width: $desktop-width) {
       max-width: 930px;
     }
@@ -49,7 +49,7 @@
     align-items: center;
   }
 
-  
+
 
   &__title {
     margin-bottom: 13px;
@@ -65,7 +65,7 @@
     }
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       margin-bottom: 9px;
-    
+
     }
 
     @media (min-width: $desktop-width) {
@@ -83,7 +83,7 @@
       margin-bottom: 10px;
     }
 
-    
+
 
   }
 
@@ -106,11 +106,11 @@
   &__link {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     width: 100%;
     height: 100%;
     background-color: $lightpurple;
-    background-image: url("./img/arrow.svg");
+    background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
     background-position: center center;
 
@@ -121,18 +121,13 @@
   }
 
   &__link--small {
- 
+
 
     @media (min-width: $tablet-width)  {
       width: 30px;
       height: 20px;
     }
-   
 
-    // @media (min-width: $mobile-width-only) {
-    //   width: 100%;
-    //   height: 100%;
-    // }
   }
 
 
@@ -141,15 +136,15 @@
     height: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;  
- 
+    align-items: center;
+
   }
 
 
-  &__card { 
+  &__card {
     font-size: 0;
-  
     background-color: $white;
+    box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
     @media (max-width: $tablet-width) {
       width: 100%;
       margin-bottom: 30px;
@@ -161,7 +156,7 @@
     cursor: pointer;
   }
 
-  
+
   &__btn {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -174,6 +169,7 @@
     text-align: center;
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
+    box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
 
     @media (max-width: $tablet-width) {
       padding-top: 14px;
@@ -211,17 +207,15 @@
 
 
   &__descr {
-    // padding-top: 42px;
-    // padding-left: 46px;
 
     @media (max-width: $desktop-width) {
       padding-top: 18px;
       padding-left: 21px;
-    
+
     }
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-      padding-top: 18px;
+      padding-top: 30px;
       padding-bottom: 11px;
     }
 
@@ -229,7 +223,7 @@
       padding-top: 42px;
       padding-bottom: 26px;
     }
-    
+
   }
 
   &__teacher {
@@ -247,14 +241,14 @@
       font-size: 12px;
       width: 130px;
     }
-    
+
   }
 
   &__instructor {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // width: 235px;
+
 
     @media (max-width: $tablet-width) {
       width: 160px;
@@ -267,16 +261,11 @@
     min-height: 150px;
     background-color: $white;
 
-    
+
 
   }
 
   &__left {
-
-    // @media (max-width: $desktop-width) {
-    //   width: 40%;
-     
-    // }
 
     @media (max-width: $tablet-width) {
       width: 100%;
@@ -284,7 +273,7 @@
     @media (min-width: $desktop-width) {
       width: 366px;
     }
-   
+
   }
   &__right {
     @media (max-width: $desktop-width) {
@@ -295,18 +284,18 @@
       width: 100%;
     }
 
-    
+
   }
 
   &__description {
     display: flex;
     @media (max-width: $tablet-width) {
-     
+
       flex-direction: column;
     }
 
     @media (max-width: $desktop-width) {
-     
+
       justify-content: space-between;
     }
     @media (min-width: $desktop-width) {
@@ -321,11 +310,11 @@
   &__card {
     display: flex;
     @media (max-width: $tablet-width) {
-      
+
       flex-direction: column;
     }
     @media (max-width: $desktop-width) {
-      
+
       justify-content: space-between;
     }
     @media (min-width: $desktop-width) {
@@ -358,7 +347,7 @@
   &__img {
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       width: 148px;
-      height: 131px;
+      height: 150px;
     }
     @media (min-width: $desktop-width) {
       width: 220px;
@@ -369,10 +358,10 @@
 
   &__refer {
     @media (min-width: $tablet-width) {
-      padding-bottom: 20px;
+      padding-bottom: 30px;
       margin-top: auto;
       width: 55px;
-      
+
     }
   }
 }
@@ -402,287 +391,8 @@
       padding-bottom: 26px;
     }
   }
-  
+
 }
 
 
-// .left {
-//   @media (max-width: $desktop-width) {
-//     &__hatha {
-//       width: 246px;
-//       height: 209px;
-//     }
-//   }
-    
 
-// .direction {
-//   margin: 0 auto;
-//   margin-bottom: 154px;
-
-//   @media (min-width: $mobile-width-only) {
-//     margin-bottom: 70px;
-//   }
-
-//   &__description {
-//     display: flex;
-//     justify-content: space-between;
-
-//     @media (max-width: $tablet-width) {
-      
-//       flex-direction: column;
-//       flex-wrap: wrap;
-//       align-items: center;
-//     }
-//   }
-
-//   &__title {
-//     margin-bottom: 13px;
-//     font-size: 16px;
-//     line-height: 16px;
-//     font-weight: 700;
-//     color: $lightpurple;
-
-//     @media (max-width: $tablet-width) {
-//       margin-bottom: 0;
-//       font-size: 12px;
-//       line-height: 12px;
-//     }
-//   }
-
-
-
-//   &__info {
-//     font-size: 12px;
-//     line-height: 20px;
-//     font-weight: 500;
-//     color: $lightpurple;
-
-//     @media (max-width: $tablet-width) {
-//       font-size: 10px;
-//       line-height: 15px;
-//     }
-//   }
-
-  
-
-//   &__btn {
-//     padding-top: 20px;
-//     padding-bottom: 20px;
-//     width: 100%;
-//     font-size: 14px;
-//     line-height: 14px;
-//     font-weight: 500;
-//     color: $lightpurple;
-//     background-color: $white;
-//     text-align: center;
-//     @media (max-width: $tablet-width) {
-//       padding-top: 14px;
-//       padding-bottom: 14px;
-//     }
-//   }
-
-//   &__link {
-//     display: block;
-//     width: 100%;
-//     height: 100%;
-//     background-color: $lightpurple;
-//     background-image: url("/img/arrow.svg");
-//     background-repeat: no-repeat;
-//     background-position: center center;
-
-    
-
-//   }
-
-//   &__link--small {
-//     width: 45px;
-//     height: 30px;
-//     @media (min-width: $mobile-width-only) {
-//       width: 100%;
-//       height: 100%;
-//     }
-//   }
-
-//   &__card { 
-
-  
-
-//     @media (min-width: $mobile-width-only) {
-//       width: 100%;
-//     }
-//   }
-
-//   &__refer {
-//     width: 20%;
-//   }
-// }
-
-// // .left {
-// //   &__hatha {
-// //     // width: 366px;
-// //     // height: 311px;
-    
-
-// //     @media (max-width: $tablet-width) {
-// //       // width: 246px;
-// //       // height: 209px;
-// //       width: 100%;
-      
-// //     }
-
-// //     // @media (min-width: $mobile-width-only) {
-// //     //   width: 100%;
-// //     // }
-
-// //   }
-
-// //   &__card {
-// //     margin-right: 30px;
-
-// //     @media (max-width: $tablet-width) {
-// //       margin-right: 0;
-// //       margin-bottom: 30px;
-// //       font-size: 0;
-// //     }
-// //   }
-
-// //   &__descr {
-// //     padding-top: 42px;
-// //     padding-left: 46px;
-
-// //     @media (max-width: $tablet-width) {
-// //       padding-top: 18px;
-// //       padding-left: 21px;
-// //       padding-bottom: 13px;
-// //     }
-// //   }
-
-// //   &__teacher {
-// //     width: 115px;
-// //     font-size: 12px;
-// //     line-height: 18px;
-// //     font-weight: 500;
-// //     color: $lightred;
-
-// //     @media (max-width: $tablet-width) {
-// //       font-size: 10px;
-// //       line-height: 15px;
-// //     }
-// //   }
-
-// //   &__bottom {
-// //     display: flex;
-// //     justify-content: space-between;
-// //     background-color: $white;
-// //   }
-
-// //   &__info {
-// //     width: 175px;
-// //   }
-// // }
-
-// .right {
-
-//   @media (min-width: $mobile-width-only) {
-//     width: 100%;
-//   }
-
-//   // &__img {
-//   //   width: 220px;
-//   //   height: 180px;
-   
-
-//   //   @media (max-width: $tablet-width) {
-//   //     width: 148px;
-//   //     height: 121px;
-   
-//   //   }
-
-//   //   @media (min-width: $mobile-width-only) {
-//   //     width: 246px;
-//   //     height: 201px;
-//   //   }
-//   // }
-
-
-
-//   &__teacher {
-//     width: 115px;
-//     font-size: 12px;
-//     line-height: 18px;
-//     font-weight: 500;
-//     color: $lightred;
-
-//     @media (max-width: $tablet-width) {
-//       font-size: 10px;
-//       line-height: 15px;
-//     }
-//   }
-
-//   &__timetable {
-//     margin-bottom: 16px;
-//   }
-
-//   &__first {
-//     display: flex;
-//     margin-bottom: 18px;
-
-//     @media (min-width: $mobile-width-only) {
-      
-//       margin-bottom: 30px;
-//     }
-//   }
-
-//   &__second {
-//     display: flex;
-//     margin-bottom: 20px;
-
-//     @media (max-width: $tablet-width) {
-//       margin-bottom: 24px;
-//     }
-//   }
-
-//   &__descr {
-//     padding-top: 42px;
-//     padding-left: 34px;
-//     padding-right: 34px;
-
-//     @media (max-width: $tablet-width) {
-//       padding-top: 18px;
-//       padding-left: 20px;
-//       padding-right: 0px;
-//     }
-
-//   }
-
-//   &__info {
-//     width: 165px;
-//   }
-
-//   &__card {
-//     background-color: $white;
-
-//     @media (min-width: $mobile-width-only) {
-//       flex-direction: column;
-//     }
-//   }
-
-//   &__instructor {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     width: 235px;
-
-//     @media (max-width: $tablet-width) {
-//       width: 160px;
-//     }
-//   }
-
-
-//   &__bottom {
-//     @media (min-width: $mobile-width-only) {
-//       display: flex;
-//       justify-content: space-between;
-//     }
-//   }
-// }

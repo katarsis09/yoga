@@ -1,10 +1,10 @@
 .about {
- 
+
 
   margin-bottom: 70px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 70px; 
+    margin-bottom: 70px;
   }
 
 
@@ -19,18 +19,18 @@
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       margin-bottom: 30px;
-    } 
+    }
   }
 
 
   &__item:not(:last-child) {
     @media (min-width: $tablet-width) {
-      margin-bottom: 89px; 
+      margin-bottom: 45px;
     }
-    
+
 
     @media (max-width: $tablet-width) {
-      margin-bottom: 30px; 
+      margin-bottom: 30px;
     }
   }
 
@@ -38,22 +38,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     background-color: $white;
-  
+    box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
 
     @media (max-width: $tablet-width) {
       width: 250px;
-    
-      margin-bottom: 30px; 
+
+      margin-bottom: 30px;
       padding-right: 7px;
     }
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       width: 340px;
       padding-right: 8px;
-     
-      
+
+
     }
     @media (min-width: $desktop-width) {
       width: 400px;
@@ -61,8 +61,6 @@
     }
 
   }
-
- 
 
   &__article {
     display: flex;
@@ -85,7 +83,7 @@
   }
 
   &__descr {
-   
+
     font-size: 12px;
     line-height: 20px;
 
@@ -134,7 +132,7 @@
     color: $lightpurple;
   }
 
-  &__photo { 
+  &__photo {
     width: 144px;
     height: 144px;
     background-repeat: no-repeat;
@@ -156,15 +154,15 @@
   }
 
   &__popov {
-    background-image: url("./img/teacher.jpg");
+    background-image: url("../img/teacher.jpg");
   }
 
   &__rojnina {
-    background-image: url("./img/ronjina.jpg");
+    background-image: url("../img/ronjina.jpg");
   }
 
   &__emelyanova {
-    background-image: url("./img/emelyanova.jpg");
+    background-image: url("../img/emelyanova.jpg");
   }
 
 
@@ -173,11 +171,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    @media (max-width: $tablet-width) {
-      // margin-top: auto;
-     
-    }
-   
+
   }
 
   &__social {
@@ -191,7 +185,7 @@
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       margin-bottom: 20px;
     }
-   
+
   }
 
   &__link {
@@ -206,10 +200,6 @@
     }
   }
 
-  // &__description {
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
 
   &__contact:not(:last-child) {
     margin-right: 11px;
@@ -223,7 +213,7 @@
 
     @media (max-width: $tablet-width) {
       margin-bottom: 5px;
-    
+
     }
 
     @media (min-width: $tablet-width) {
@@ -253,29 +243,21 @@
     line-height: 15px;
     color: $lightpurple;
 
-    // @media (max-width: $tablet-width) {
-    //   font-size: 10px;
-    //   line-height: 15px;
-    // }
     @media (min-width: $desktop-width) {
       font-size: 12px;
       line-height: 20px;
     }
   }
-  
+
   &__slides input {
     display: none;
-  } 
+  }
 
   &__cards {
     display: flex;
-    // @media (min-width: $tablet-width) {
-    //   display: flex;
-    //   justify-content: space-between;
-    // }
 
     @media (min-width: $tablet-width) {
-     
+
       justify-content: space-between;
     }
 
@@ -287,18 +269,13 @@
 
 
   &__info {
-     
+
       display: none;
     }
-    
-  
-
-
 
   &__radio:checked + .about__info {
-   
+
         display: block;
-      
+
   }
-  
 }

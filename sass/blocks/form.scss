@@ -4,7 +4,7 @@
 
   font-size: 14px;
   line-height: 20px;
-  
+
 
   &__field {
     margin-bottom: 25px;
@@ -15,6 +15,7 @@
     color: $lightpurple;
     opacity: 0.5;
     cursor: pointer;
+    box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
   }
 
   &__send {
@@ -25,6 +26,7 @@
     background-color: $lightred;
     color: $white;
     cursor: pointer;
+    box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
   }
 
   &__send:focus {

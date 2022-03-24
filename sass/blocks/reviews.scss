@@ -1,5 +1,5 @@
 .reviews {
-  
+
 
   margin-bottom: 147px;
   display: flex;
@@ -8,21 +8,15 @@
   @media (min-width: $tablet-width) {
     position: relative;
   }
-  
 
-  
+
+
 
   &__card {
     transition: all 2s ease;
     background-color: $white;
     width: 20%;
-    // @media (max-width: $tablet-width) {
-    //   width: 20%;
-    // }
-    // @media (min-width: $tablet-width) {
-    //   width: 20%;
-    // }
-    
+    box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
   }
 
   &__cards {
@@ -30,7 +24,7 @@
     @media (max-width: $tablet-width) {
       width: 500%;
       height: 250px;
-      
+
       margin-bottom: 30px;
     }
 
@@ -40,20 +34,8 @@
     }
   }
 
-  // &__slider {
-  //   @media (max-width: $tablet-width) {
-  //     width: 250px;
-  //     height: 250px;
-  //   }
-  //   @media (min-width: $tablet-width) {
-  //     width: 440px;
-  //     height: 315px;
-  //   }
 
-  // }
 
-  
-  
   &__article {
     display: flex;
     justify-content: space-between;
@@ -61,7 +43,6 @@
     background-color: $white;
     font-size: 12px;
     line-height: 20px;
-    
 
 
     @media (max-width: $tablet-width) {
@@ -74,16 +55,15 @@
       justify-content: center;
       width: 440px;
       height: 315px;
-      // height: 215px;
       padding-top: 50px;
       padding-left: 87px;
       padding-right: 57px;
-    } 
+    }
   }
 
   &__slider {
     overflow: hidden;
-    
+
     @media (max-width: $tablet-width) {
       width: 250px;
       height: 250px;
@@ -91,21 +71,17 @@
     @media (min-width: $tablet-width) {
       width: 440px;
       height: 315px;
-      // position: relative;
     }
 
   }
 
   &__slider input {
     display: none;
-  } 
+  }
 
 
   &__navigation {
     position: absolute;
-    // width: 100%;
-    // width: 800px;
-    // margin-top: -40px;
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -141,10 +117,7 @@
   #radio2:checked~.reviews__first {
       margin-left: -20%;
   }
-  // div
-  // <input>
-  // <div.first>
-  // div
+
   #radio3:checked~.reviews__first {
       margin-left: -40%;
   }
@@ -162,7 +135,7 @@
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       margin-bottom: 18px;
     }
-    
+
   }
 
   &__item {
@@ -186,7 +159,7 @@
 
   &__text {
     color: $lightpurple;
-    
+
 
     @media (max-width: $tablet-width) {
       margin-bottom: 30px;
