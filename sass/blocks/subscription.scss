@@ -41,40 +41,44 @@
   }
 
   &__time {
-
     width: 100%;
     height: 100%;
     background-color: $white;
     box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
-    transition: all 0.1s ease-in-out;
-    transition-duration: 0.05s;
-    transition-timing-function: ease;
+    min-width: 250px;
+    padding-bottom: 44px;
+    padding-top: 30px;
+    transition: all 0.5s ease;
+    @media (min-width: $tablet-width) {
+      min-width: 192px;
+    }
 
+    @media (min-width: $desktop-width) {
+      min-width: 263px;
+    }
 
-    @media (max-width: $tablet-width) {
-      width: 250px;
-      height: 199px;
+  }
 
+  &__time:hover {
+    @media (min-width: $tablet-width) {
+      min-width: 244px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 331px;
     }
   }
 
   &__time:hover .subscription__button {
     @media (min-width: $tablet-width) {
-      display: block;
+      height: 34px;
+      opacity: 1;
     }
   }
 
-  &__time:hover {
-    background-color: $white;
-    @media (min-width: $tablet-width) {
-      height: 250px;
-    }
 
-    @media (min-width: $desktop-width) {
-      height: 100%;
-    }
 
-  }
+
 
   &__time:not(:last-child) {
 
@@ -100,20 +104,20 @@
 
   &__button {
     width: 148px;
-    padding: 14px 17px;
+    height: 34px;
     font-size: 10px;
     line-height: 20px;
     font-weight: 500;
     color: $white;
     background-color: $lightpurple;
     text-align: center;
-    transition: background-color 0.3s ease-in-out;
-
+    transition: all 0.5s ease;
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
-      display: none;
+      opacity: 0;
+      height: 0px;
     }
-
 
   }
 
@@ -136,57 +140,32 @@
 
 
   &__article {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 56px;
-  padding-bottom: 56px;
-  text-align: center;
-
-
-  @media (max-width: $tablet-width) {
-    padding-top: 28px;
-    padding-bottom: 30px;
-  }
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    height: 159px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
   }
 
   &__condition {
-    padding-left: 60px;
-    padding-right: 60px;
     font-size: 12px;
     line-height: 20px;
     color: $lightred;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 15px;
+    font-size: 10px;
+    line-height: 15px;
 
-    @media (max-width: $tablet-width) {
-      padding-left: 20px;
-      padding-right: 20px;
-      margin-bottom: 15px;
-      font-size: 10px;
-      line-height: 15px;
-    }
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-      padding-left: 20px;
-      padding-right: 20px;
-      margin-bottom: 15px;
+    @media (min-width: $tablet-width) {
+      width: 170px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 15px;
-      padding-left: 70px;
-      padding-right: 70px;
-      font-size: 12px;
+      width: 175px;
       line-height: 15px;
-
     }
   }
 
