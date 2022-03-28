@@ -165,13 +165,10 @@
     background-image: url("../img/emelyanova.jpg");
   }
 
-
   &__teacher {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
   }
 
   &__social {
@@ -213,7 +210,6 @@
 
     @media (max-width: $tablet-width) {
       margin-bottom: 5px;
-
     }
 
     @media (min-width: $tablet-width) {
@@ -257,7 +253,6 @@
     display: flex;
 
     @media (min-width: $tablet-width) {
-
       justify-content: space-between;
     }
 
@@ -269,13 +264,10 @@
 
 
   &__info {
-
       display: none;
     }
 
   &__radio:checked + .about__info {
-
         display: block;
-
   }
 }
